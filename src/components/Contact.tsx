@@ -9,10 +9,10 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-serif text-5xl font-bold mb-4 tracking-tight">
-              Kontakta Oss
+              Contact us
             </h2>
             <p className="text-lg text-muted-foreground">
-              Välkommen att höra av dig med frågor eller för att boka ett besök
+              Welcome! Feel free to reach out with any questions or to book a visit.
             </p>
           </div>
           
@@ -22,10 +22,10 @@ const Contact = () => {
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
                   <MapPin className="w-6 h-6 text-accent" />
                 </div>
-                <h3 className="font-semibold mb-2">Adress</h3>
+                <h3 className="font-semibold mb-2">Address</h3>
                 <p className="text-sm text-muted-foreground">
-                  Bråvallagatan 10<br />
-                  Stockholm
+                  Storgatan<br />
+                  Helsingborg
                 </p>
               </CardContent>
             </Card>
@@ -35,9 +35,9 @@ const Contact = () => {
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
                   <Phone className="w-6 h-6 text-accent" />
                 </div>
-                <h3 className="font-semibold mb-2">Telefon</h3>
+                <h3 className="font-semibold mb-2">Mobile Phone</h3>
                 <p className="text-sm text-muted-foreground">
-                  070 123 45 67
+                  072-123 45 67
                 </p>
               </CardContent>
             </Card>
@@ -47,9 +47,9 @@ const Contact = () => {
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
                   <Mail className="w-6 h-6 text-accent" />
                 </div>
-                <h3 className="font-semibold mb-2">E-post</h3>
+                <h3 className="font-semibold mb-2">E-mail</h3>
                 <p className="text-sm text-muted-foreground">
-                  info@vinforvaring.se
+                  info@dewine.com
                 </p>
               </CardContent>
             </Card>
@@ -57,7 +57,7 @@ const Contact = () => {
           
           <div className="text-center">
             <Button size="lg" className="min-w-[250px]">
-              Skicka Förfrågan
+              Send Request 
             </Button>
           </div>
         </div>

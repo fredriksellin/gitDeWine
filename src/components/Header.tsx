@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/button";
+import BookingModal from "@/components/BookingModal";
+
 const Header = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -11,7 +14,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <h1 className="font-serif text-2xl font-bold tracking-tight">
-            Ekelund & Ribe <span className="text-accent">Vinförvaring</span>
+            DeWine <span className="text-accent">Wine storage & events</span>
           </h1>
         </div>
         
@@ -20,27 +23,21 @@ const Header = () => {
             onClick={() => scrollToSection('about')}
             className="text-sm font-medium hover:text-accent transition-colors"
           >
-            Om Oss
+            About
           </button>
           <button 
             onClick={() => scrollToSection('services')}
             className="text-sm font-medium hover:text-accent transition-colors"
           >
-            Tjänster
+          Services
           </button>
           <button 
             onClick={() => scrollToSection('contact')}
             className="text-sm font-medium hover:text-accent transition-colors"
           >
-            Kontakt
+          Contact
           </button>
-          <Button 
-            variant="default"
-            onClick={() => scrollToSection('contact')}
-            className="ml-2"
-          >
-            Boka Loungen
-          </Button>
+          <BookingModal trigger={<Button variant="default" className="ml-2">Book the Lounge</Button>} />
         </nav>
       </div>
     </header>

@@ -20,10 +20,10 @@ const Hero = () => {
       
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <h2 className="font-serif text-5xl md:text-7xl font-bold text-primary-foreground mb-4 tracking-tight">
-          Ekelund & Ribe
+          DeWine
         </h2>
         <p className="font-serif text-3xl md:text-5xl text-primary-foreground mb-12">
-          Vinförvaring
+          Wine Storage & Events
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -33,7 +33,7 @@ const Hero = () => {
             onClick={scrollToContact}
             className="min-w-[200px] text-lg font-medium"
           >
-            Kontakta Oss
+          Contact Us
           </Button>
           <Button 
             size="lg"
@@ -41,7 +41,7 @@ const Hero = () => {
             onClick={scrollToContact}
             className="min-w-[200px] text-lg font-medium"
           >
-            Boka Loungen
+            Book the Lounge
           </Button>
         </div>
       </div>

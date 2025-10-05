@@ -4,23 +4,23 @@ import { Card, CardContent } from "@/components/ui/card";
 const services = [
   {
     icon: Wine,
-    title: "Professionell Vinförvaring",
-    description: "Optimala förhållanden för långtidsförvaring av dina finaste viner",
+    title: "Quality wine storage",
+    description: "Ideal storage for your finest wines",
   },
   {
     icon: Thermometer,
-    title: "Temperaturkontroll",
-    description: "Konstant temperatur och luftfuktighet för perfekt mognad",
+    title: "Temperature Control",
+    description: "Constant temperature and humidity for perfect aging",
   },
   {
     icon: Shield,
-    title: "Trygg & Säker",
-    description: "Larmade lokaler med begränsad åtkomst för din trygghet",
+    title: "Secure storage",
+    description: "Alarmed facilities with restricted access for your safety",
   },
   {
     icon: Building,
     title: "Lounge & Event",
-    description: "Möjlighet att boka vår eleganta lounge för privata evenemang",
+    description: "Opportunity to book our elegant lounge for private events",
   },
 ];
 
@@ -30,10 +30,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-serif text-5xl font-bold mb-4 tracking-tight">
-            Våra Tjänster
+            Our Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Vi erbjuder komplett vinförvaring med alla tjänster du behöver för att ta hand om din vinkollektion
+            We offer complete wine storage with all the services you need to take care of your wine collection.
           </p>
         </div>
         

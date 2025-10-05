@@ -1,3 +1,5 @@
+// If the file exists at src/components/ui/toaster.tsx, leave as is.
+// Otherwise, update the import path to the correct location, for example:
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
