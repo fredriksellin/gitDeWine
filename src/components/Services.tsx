@@ -5,7 +5,7 @@ const services = [
   {
     icon: Wine,
     title: "Quality wine storage",
-    description: "Ideal storage for your finest wines",
+    description: "Ideal storage for your premium wines",
   },
   {
     icon: Thermometer,
@@ -20,7 +20,7 @@ const services = [
   {
     icon: Building,
     title: "Lounge & Event",
-    description: "Opportunity to book our elegant lounge for private events",
+    description: "Opportunity to book our cozy lounge for tasting. Events for members will also be organized.",
   },
 ];
 

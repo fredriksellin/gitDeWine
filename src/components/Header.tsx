@@ -23,7 +23,7 @@ const Header = () => {
             onClick={() => scrollToSection('about')}
             className="text-sm font-medium hover:text-accent transition-colors"
           >
-            About
+          About
           </button>
           <button 
             onClick={() => scrollToSection('services')}

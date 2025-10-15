@@ -31,7 +31,7 @@ export default function BookingModal({ trigger }: Props) {
     const dateStr = `${yyyy}-${mm}-${dd}`;
 
     if (!isSlotAvailable(dateStr, slot)) {
-      toast("Den valda tiden är inte tillgänglig.");
+      toast("Choosen time is not available");
       return;
     }
 
@@ -51,7 +51,7 @@ export default function BookingModal({ trigger }: Props) {
     };
 
     saveBooking(booking);
-    toast.success("Bokningen är bekräftad!");
+    toast.success("Booking confirmed!");
     setOpen(false);
 
     // trigger ICS download
@@ -74,17 +74,17 @@ export default function BookingModal({ trigger }: Props) {
       {trigger ? <DialogTrigger asChild>{trigger}</DialogTrigger> : <DialogTrigger asChild><Button>Boka Loungen</Button></DialogTrigger>}
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Boka Loungen</DialogTitle>
+          <DialogTitle>Book the Lounge</DialogTitle>
         </DialogHeader>
 
         <div className="grid gap-4 py-4">
           <div>
-            <p className="mb-2 font-medium">Välj datum</p>
+            <p className="mb-2 font-medium">Choose date</p>
             <DayPicker mode="single" selected={date} onSelect={setDate} disabled={{ before: new Date() }} />
           </div>
 
           <div>
-            <p className="mb-2 font-medium">Välj tid</p>
+            <p className="mb-2 font-medium">Choose time</p>
             <div className="flex flex-wrap gap-2">
               {slots.map((s) => {
                 const disabled = !selectedDateStr || !isSlotAvailable(selectedDateStr, s);
@@ -98,17 +98,17 @@ export default function BookingModal({ trigger }: Props) {
           </div>
 
           <div className="grid gap-2">
-            <label className="text-sm">Namn (valfritt)</label>
+            <label className="text-sm">Name</label>
             <input value={name} onChange={(e) => setName(e.target.value)} className="input" />
-            <label className="text-sm">E-post (valfritt)</label>
+            <label className="text-sm">Email</label>
             <input value={email} onChange={(e) => setEmail(e.target.value)} className="input" />
           </div>
         </div>
 
         <DialogFooter>
           <div className="flex gap-2 w-full justify-end">
-            <Button variant="ghost" onClick={() => setOpen(false)}>Avbryt</Button>
-            <Button onClick={handleConfirm} disabled={!date || !slot}>Bekräfta bokning</Button>
+            <Button variant="ghost" onClick={() => setOpen(false)}>Cancel</Button>
+            <Button onClick={handleConfirm} disabled={!date || !slot}>Confirm booking</Button>
           </div>
         </DialogFooter>
       </DialogContent>
